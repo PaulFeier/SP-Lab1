@@ -25,6 +25,7 @@ public class Section implements Element {
 
     @Override
     public void print() {
+        System.out.println(this.title);
         this.children.forEach(System.out::println);
     }
 }

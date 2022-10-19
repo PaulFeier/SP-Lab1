@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Book extends Section {
-    private Author a;
+    private Author a = null;
     public Book(String title) {
         super(title);
     }
@@ -14,7 +14,7 @@ public class Book extends Section {
     }
     @Override
     public void print() {
-        a.print();
         super.print();
+        a.print();
     }
 }
